@@ -7,7 +7,7 @@ function changeHeight() {
     var wHeight = $(window).height();
     var dHeight = $('#page-bg').height();
     var spHeight = $('.sp:visible').height();
-    if($('#button-previous').length >0) spHeight += 250;
+    if($('#button-previous').length >0) spHeight += 150;
     $('#content').css('height', spHeight);
     if (dHeight < wHeight)
         $('#page-bg').height(wHeight - 40);

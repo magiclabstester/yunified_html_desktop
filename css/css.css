@@ -7,7 +7,7 @@ html{height: 100%;}
 body{text-align:center; margin:0; position:relative; min-height:100%; font-weight: normal;}
 #logo{ margin: 100px 0}
 
-#page-bg{background:url(../img/404_bg.jpg) center; background-repeat:no-repeat; background-size:cover; padding:10px; padding-bottom:30px; position:relative;  min-height: 100%}
+#page-bg{background:url(../img/404_bg.jpg) center; background-repeat:no-repeat; background-size:cover; padding:10px; padding-bottom:30px; position:relative;  min-height: 100%; overflow:hidden}
 
 /*Title*/
 #title{ margin: 100px 0}
