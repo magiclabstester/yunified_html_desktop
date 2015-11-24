@@ -9,16 +9,21 @@ function changeHeight() {
     var spHeight = $('.sp:visible').height();
     if($('#button-previous').length >0) spHeight += 150;
     $('#content').css('height', spHeight);
-    if (dHeight < wHeight)
+	
+    if (dHeight < wHeight){
         $('#page-bg').height(wHeight - 40);
+		
+		//alert('ddd');
+	}
     else {
         $('#page-bg').height('auto');
         var wHeight = $(window).height();
         var dHeight = $('#page-bg').height();
-        if (dHeight < wHeight)
-            $('#page-bg').height(wHeight - 40);
-
+        if (dHeight < wHeight)$('#page-bg').height(wHeight - 40);
     }
+	var vHeight = $('#vertical').height() + 420;
+	if (vHeight< wHeight)$('#vertical').css('margin-top', (wHeight - vHeight)/2 + 'px');
+	else $('#vertical').css('margin-top', 0);
 }
 ;
 
