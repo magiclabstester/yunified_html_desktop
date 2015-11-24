@@ -4,21 +4,22 @@
 @font-face {font-family: 'webfonts-gotham-bold'; src: url('fonts/gotham/Gotham-Bold.otf');}
 @font-face {font-family: 'webfonts-gotham-light';src: url('fonts/gotham/Gotham-Light.otf');}
 html{height: 100%;}
-body{text-align:center; margin:0; position:relative; min-height:100%}
+body{text-align:center; margin:0; position:relative; min-height:100%; font-weight: normal;}
 #logo{ margin: 100px 0}
 
 #page-bg{background:url(../img/404_bg.jpg) center; background-repeat:no-repeat; background-size:cover; padding:10px; padding-bottom:30px; position:relative;  min-height: 100%}
 
 /*Title*/
 #title{ margin: 100px 0}
-#title h2{ color:#FF5100; font-size:60px; font-family:"webfonts-gotham-bold";letter-spacing:-0.04em; margin:0;  }
-#title h3{ font-family:"webfonts-gotham-book"; color:#FFF; font-size:20px; font-weight:400; letter-spacing:-0.04em; margin:0}
+#title h2{ color:#FF5100; font-size:60px; font-family:"webfonts-gotham-bold";letter-spacing:-0.04em; margin:0; font-weight: normal; margin-bottom: 10px;}
+#title h3{ font-family:"webfonts-gotham-book"; color:#FFF; font-size:20px;  letter-spacing:-0.04em; margin:0; font-weight: normal; margin-bottom: 5px;}
+#title h3.below{ font-family:"webfonts-gotham-bold";}
 
 
 /*Content*/
 #content{position:relative; margin-bottom:50px}
-#content h3, #content h3 a{font-family:"webfonts-gotham-medium"; color:#FF5100; font-size:20px; font-weight:400; letter-spacing:-0.04em; margin:0; margin-top:30px; text-decoration:none}
-#content p, #content p a{ font-family:"webfonts-gotham-light"; font-size:14px; color:#FFF; letter-spacing:-0.04em; margin:0; margin-bottom:30px; line-height:15px; text-decoration:none}
+#content h3, #content h3 a{font-family:"webfonts-gotham-medium"; color:#FF5100; font-size:20px;  letter-spacing:-0.04em; margin:0; margin-top:30px; text-decoration:none; font-weight: normal; margin-bottom: 5px;}
+#content p, #content p a{ font-family:"webfonts-gotham-light"; font-size:14px; color:#FFF; letter-spacing:-0.04em; margin:0; margin-bottom:30px; line-height:15px; text-decoration:none; font-weight: normal;}
 .sp:not(.active){display:none}
 .sp{position: absolute; top:0; width:100%}
 #button-previous{margin-top:250px}
@@ -26,5 +27,5 @@ body{text-align:center; margin:0; position:relative; min-height:100%}
 
 
 #footer{width:99%; position:absolute; bottom:15px; box-sizing:border-box}
-#footer a{ display:inline-block; color: #FFF; margin:5px; font-family:"webfonts-gotham-light"; font-size:12px; line-height:17.15px; text-decoration: none}
+#footer a{ display:inline-block; color: #FFF; margin:5px; font-family:"webfonts-gotham-light"; font-size:12px; line-height:1em; text-decoration: none}
 
