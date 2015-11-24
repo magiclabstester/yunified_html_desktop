@@ -3,22 +3,28 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-function changeHeight(){
- var wHeight = $(window).height();
- var dHeight = $('#page-bg').height();
- if(dHeight < wHeight)$('#page-bg').height(wHeight-40);
- else{
-  $('#page-bg').height('auto');
-  var wHeight = $(window).height();
-  var dHeight = $('#page-bg').height();
-  if(dHeight < wHeight)$('#page-bg').height(wHeight-40);
-  
- }
-};
- 
+function changeHeight() {
+    var wHeight = $(window).height();
+    var dHeight = $('#page-bg').height();
+    var spHeight = $('.sp:visible').height();
+    if($('#button-previous').length >0) spHeight += 250;
+    $('#content').css('height', spHeight);
+    if (dHeight < wHeight)
+        $('#page-bg').height(wHeight - 40);
+    else {
+        $('#page-bg').height('auto');
+        var wHeight = $(window).height();
+        var dHeight = $('#page-bg').height();
+        if (dHeight < wHeight)
+            $('#page-bg').height(wHeight - 40);
+
+    }
+}
+;
+
 $(document).ready(function () {
-	changeHeight();
-	$(window).resize(function(e) {
+    changeHeight();
+    $(window).resize(function () {
         changeHeight();
     });
     $('.sp').first().addClass('active');
