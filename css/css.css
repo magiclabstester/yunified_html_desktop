@@ -6,6 +6,8 @@
 html{height: 100%;}
 body{text-align:center; margin:0; position:relative; min-height:100%; font-weight: normal;}
 #logo{ margin: 100px 0}
+#page-bg a{text-decoration:none !important}
+
 
 #page-bg{background:url(../img/404_bg.jpg) center; background-repeat:no-repeat; background-size:cover; padding:10px; padding-bottom:30px; position:relative;  min-height: 100%; overflow:hidden}
 
@@ -25,7 +27,30 @@ body{text-align:center; margin:0; position:relative; min-height:100%; font-weigh
 #button-previous{margin-top:250px}
 .col{display:inline-block; margin:30px}
 
+/*Contact form*/
+#contact-form{ max-width:773px; margin: auto}
+#contact-form textarea, #contact-form input:not(.captchaTxt){ box-sizing:border-box; width:100%}
+#contact-form textarea{height:93px}
+#contact-form .col-50{width:48.4%; box-sizing:border-box; margin:0 0.8%; float:left}
+#contact-form .col-100{ margin:0 0.8%;}
+#contact-form .col-wrap{clear:both; overflow:hidden; margin: 16px 0}
+#contact-form .col-wrap.captcha-wrap{ margin-top:32px; margin-bottom:-10px}
+.captcha{ color:#FFF; font-size:14px; font-family:'webfonts-gotham-light'}
+.captcha span{font-family: 'webfonts-gotham-bold'}
+.captchaTxt{ width:22px; height:22px; text-align:center; padding:0 !important}
+
+
+@media screen and (max-width: 480px) {
+	#contact-form .col-50{width:100%; margin-bottom:10px;}
+	#contact-form .col-wrap{margin:0}
+	#contact-form textarea{width:101%}
+	#contact-form .col-wrap.captcha-wrap{margin-bottom:0}
+	.myButton{ width:101% !important; margin-top:8px !important; clear:both; overflow:hidden}
+}
+
+
 
 #footer{width:99%; position:absolute; bottom:15px; box-sizing:border-box}
 #footer a{ display:inline-block; color: #FFF; margin:5px; font-family:"webfonts-gotham-light"; font-size:12px; line-height:1em; text-decoration: none}
+
 

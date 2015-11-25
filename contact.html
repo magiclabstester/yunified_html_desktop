@@ -13,30 +13,32 @@
     <body>
         <div id="page-bg">
             <div id="logo"><img src="img/logo.png" width="270" height="69" alt=""/></div>
+            <div id="vertical">
             <div id="title">
                 <h2>Contact us</h2>
                 <h3>We eager to please you with individual solutions</h3>
             </div>
             <div id="content">
-                <div class="col">
-                    <div class="for-group">
-                        <div class="col-md-6">
-                            <input type="text" required/>
-                        </div>
-                        <div class="col-md-6">
-                            <input type="text" required/>
-                        </div>
+            	
+                <form id="contact-form" class="myForm">
+                	<div class="col-wrap">
+                        <div class="col-50"><input type="text" required placeholder="Your name"/></div>
+                        <div class="col-50"><input type="text" required placeholder="Your email address"/></div>
                     </div>
-                </div>
-                <div>
-                    <div class="for-group">
-                        <div class="col-md-6">
-                            <input type="text" required/>
-                        </div>
-                        <div class="col-md-6">
-                            <input type="text" required/>
-                        </div>
+                    <div class="col-wrap">
+                        <div class="col-50"><input type="text" required placeholder="Your company"/></div>
+                        <div class="col-50"><input type="text" required placeholder="Department"/></div>
                     </div>
+                    <div class="col-wrap">
+                    	<div class="col-100"><textarea name="" id="" cols="30" rows="10" required placeholder="Your message*"></textarea></div>
+                    </div>
+                    <div class="col-wrap captcha-wrap">
+                    	<span class="captcha">What’s the total of <span>3 + 8?</span></span> <input class="captchaTxt" type="text" required/>
+                    </div>
+                    <div class="col-wrap">
+                    	<div class="col-100"><button class="myButton">Submit</button></div>
+                    </div>
+                </form>
                 </div>
             </div>
             <div id="footer">
