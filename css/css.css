@@ -13,6 +13,7 @@ body{text-align:center; margin:0; position:relative; min-height:100%; font-weigh
 
 /*Title*/
 #title{ margin: 100px 0}
+#title.contact-title{ margin-bottom:30px}
 #title h2{ color:#FF5100; font-size:60px; font-family:"webfonts-gotham-bold";letter-spacing:-0.04em; margin:0; font-weight: normal; margin-bottom: 10px;}
 #title h3{ font-family:"webfonts-gotham-book"; color:#FFF; font-size:20px;  letter-spacing:-0.04em; margin:0; font-weight: normal; margin-bottom: 5px;}
 #title h3.below{ font-family:"webfonts-gotham-bold";}
