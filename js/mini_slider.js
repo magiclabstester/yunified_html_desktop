@@ -21,7 +21,7 @@ function changeHeight() {
         var dHeight = $('#page-bg').height();
         if (dHeight < wHeight)$('#page-bg').height(wHeight - 40);
     }
-	var vHeight = $('#vertical').height() + 420;
+	var vHeight = $('#vertical').height() + 360;
 	if (vHeight< wHeight)$('#vertical').css('margin-top', (wHeight - vHeight)/2 + 'px');
 	else $('#vertical').css('margin-top', 0);
 }
