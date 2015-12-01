@@ -54,4 +54,73 @@ input:required:valid.captchaTxt{ background-image: none;}
 #footer{width:99%; position:absolute; bottom:15px; box-sizing:border-box}
 #footer a{ display:inline-block; color: #FFF; margin:5px; font-family:"webfonts-gotham-light"; font-size:12px; line-height:1em; text-decoration: none}
 
+div#tos-container {
+    text-align: left;
+    width: 1024px;
+    padding: 25px;
+    margin: 20% auto;
+    border: 1px solid #cbcbcb;
+    background: #f0f0f0;
+    background: -moz-linear-gradient(top, #f0f0f0 0%, #ffffff 4%, #ffffff 91%, #f0f0f0 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f0f0f0), color-stop(4%, #ffffff), color-stop(91%, #ffffff), color-stop(100%, #f0f0f0));
+    background: -webkit-linear-gradient(top, #f0f0f0 0%, #ffffff 4%, #ffffff 91%, #f0f0f0 100%);
+    background: -o-linear-gradient(top, #f0f0f0 0%, #ffffff 4%, #ffffff 91%, #f0f0f0 100%);
+    background: -ms-linear-gradient(top, #f0f0f0 0%, #ffffff 4%, #ffffff 91%, #f0f0f0 100%);
+    background: linear-gradient(to bottom, #f0f0f0 0%, #ffffff 4%, #ffffff 91%, #f0f0f0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#f0f0f0', GradientType=0);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    color: #333;
+}
+.tos-logo {
+    text-align: center;
+}
+div#tos-content > h3.privacy {
+    font-family: 'webfonts-gotham-bold';
+    color: #333;
+    font-size: 24px;
+    line-height: 55px;
+}
+
+div#tos-content p {
+    color: #333;
+    font-size: 14px;
+    font-family: 'webfonts-gotham-book';
+    line-height: 25px;
+    margin-bottom: 0;
+}
+div#tos-content ul, div#tos-content ul li, div#tos-content ol {
+    color: #333;
+    font-size: 14px;
+    font-family: 'webfonts-gotham-book';
+    line-height: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+div#tos-content h4 {
+    color: #333;
+    font-family: 'webfonts-gotham-bold';
+    line-height: 14px;
+    font-weight: normal;
+}
+
+div#tos-content a {
+    color: #ff5100;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'webfonts-gotham-book';
+    line-height: 1.428571429;
+}
+
+div#tos-content a:hover {
+    color: #ff5100;
+    text-decoration: underline;
+    font-size: 14px;
+    font-family: 'webfonts-gotham-book';
+    line-height: 1.428571429;
+
+}
+
 
