@@ -56,7 +56,7 @@ input:required:valid.captchaTxt{ background-image: none;}
 
 div#tos-container {
     text-align: left;
-    width: 1024px;
+    max-width: 1024px;
     padding: 25px;
     margin: 20% auto;
     border: 1px solid #cbcbcb;
@@ -80,7 +80,7 @@ div#tos-content > h3.privacy {
     font-family: 'webfonts-gotham-bold';
     color: #333;
     font-size: 24px;
-    line-height: 55px;
+    margin-bottom: 20px;
 }
 
 div#tos-content p {
@@ -102,7 +102,6 @@ div#tos-content ul, div#tos-content ul li, div#tos-content ol {
 div#tos-content h4 {
     color: #333;
     font-family: 'webfonts-gotham-bold';
-    line-height: 14px;
     font-weight: normal;
 }
 
