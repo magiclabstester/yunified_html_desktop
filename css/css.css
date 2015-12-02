@@ -54,6 +54,13 @@ input:required:valid.captchaTxt{ background-image: none;}
 #footer{width:99%; position:absolute; bottom:15px; box-sizing:border-box}
 #footer a{ display:inline-block; color: #FFF; margin:5px; font-family:"webfonts-gotham-light"; font-size:12px; line-height:1em; text-decoration: none}
 
+
+
+
+.tos, .privacy{max-width: 1024px; margin: 0 auto;  color: white; font-size: 14px; font-family: 'webfonts-gotham-book';  line-height: 20px;}
+.tos h4, .privacy h4 {font-family: 'webfonts-gotham-bold'; font-weight: normal; font-size: 24px;}
+.tos p, .privacy p {font-family: 'webfonts-gotham-book' !important; text-align: justify; text-align-last: center; line-height: 20px !important;}
+.tos a, .privacy a {color: #ff5100 !important; text-decoration: none; font-size: 14px !important;font-family: 'webfonts-gotham-book' !important;line-height: 1.428571429;}
 div#tos-container {
     text-align: left;
     max-width: 1024px;
