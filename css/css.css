@@ -161,7 +161,7 @@ div#tos-content a:hover {
   visibility: visible;
   opacity: 1;
 }
-
+#close-area{position: fixed; width: 100%; height: 100%; display: block; cursor:default}
 
 .popup {
   margin: 70px auto;
