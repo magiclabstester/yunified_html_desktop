@@ -29,7 +29,7 @@ function changeHeight() {
 
 $(document).ready(function () {
     
-    changeHeight();
+    
     $(window).resize(function () {
         changeHeight();
     });
@@ -71,4 +71,8 @@ $(document).ready(function () {
     $("body").mouseup(function(){ 
         if(! mouse_is_inside) $('.form_wrapper').hide();
     });
+    
+    
 });
+
+$(window).load(function(){changeHeight();});

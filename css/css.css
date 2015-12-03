@@ -169,9 +169,6 @@ div#tos-content a:hover {
   background: #fff;
   width: 60%;
   position: relative;
-  
-  transition: all 5s ease-in-out;
-  
 }
 
 .popup h2 {
@@ -195,6 +192,10 @@ div#tos-content a:hover {
 .popup .content {
   max-height: 30%;
   overflow: auto;
+}
+.tos-logo-popup {
+    text-align: left;
+    margin-top: 20px;
 }
 
 
