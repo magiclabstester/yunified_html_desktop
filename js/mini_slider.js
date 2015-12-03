@@ -28,6 +28,7 @@ function changeHeight() {
 ;
 
 $(document).ready(function () {
+    
     changeHeight();
     $(window).resize(function () {
         changeHeight();
@@ -59,5 +60,15 @@ $(document).ready(function () {
         $('.oldActive').removeClass('oldActive');
         $('.sp').fadeOut();
         $('.active').fadeIn();
+    });
+    var mouse_is_inside = false;
+    $('.form_content').hover(function(){ 
+        mouse_is_inside=true; 
+    }, function(){ 
+        mouse_is_inside=false; 
+    });
+
+    $("body").mouseup(function(){ 
+        if(! mouse_is_inside) $('.form_wrapper').hide();
     });
 });

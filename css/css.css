@@ -57,11 +57,12 @@ input:required:valid.captchaTxt{ background-image: none;}
 
 
 
-.tos, .privacy{max-width: 1024px; margin: 0 auto;  color: white; font-size: 14px; font-family: 'webfonts-gotham-book';  line-height: 20px;}
+/*.tos, .privacy{max-width: 1024px; margin: 0 auto;  color: white; font-size: 14px; font-family: 'webfonts-gotham-book';  line-height: 20px;}
 .tos h4, .privacy h4 {font-family: 'webfonts-gotham-bold'; font-weight: normal; font-size: 24px;}
 .tos p, .privacy p {font-family: 'webfonts-gotham-book' !important; text-align: justify; text-align-last: center; line-height: 20px !important;}
-.tos a, .privacy a {color: #ff5100 !important; text-decoration: none; font-size: 14px !important;font-family: 'webfonts-gotham-book' !important;line-height: 1.428571429;}
+.tos a, .privacy a {color: #ff5100 !important; text-decoration: none; font-size: 14px !important;font-family: 'webfonts-gotham-book' !important;line-height: 1.428571429;}*/
 div#tos-container {
+    text-align: left !important;
     text-align: left;
     max-width: 1024px;
     padding: 25px;
@@ -79,6 +80,9 @@ div#tos-container {
     -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
     color: #333;
+}
+div#tos-content {
+    text-align: left !important;
 }
 .tos-logo {
     text-align: center;
@@ -127,6 +131,70 @@ div#tos-content a:hover {
     font-family: 'webfonts-gotham-book';
     line-height: 1.428571429;
 
+}
+
+.box {
+  width: 20%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;  
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  overflow-y: scroll;
+  max-height: auto;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  width: 60%;
+  position: relative;
+  
+  transition: all 5s ease-in-out;
+  
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+.popup .close:hover {
+  color: #ff5100;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
 }
 
 
