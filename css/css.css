@@ -53,7 +53,7 @@ input:required:valid.captchaTxt{ background-image: none;}
 
 #footer{width:99%; position:absolute; bottom:15px; box-sizing:border-box}
 #footer a{ display:inline-block; color: #FFF; margin:5px; font-family:"webfonts-gotham-light"; font-size:12px; line-height:1em; text-decoration: none}
-
+#button-previous:hover {cursor: pointer;}
 
 
 

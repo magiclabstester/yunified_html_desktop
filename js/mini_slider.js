@@ -72,7 +72,6 @@ $(document).ready(function () {
         if(! mouse_is_inside) $('.form_wrapper').hide();
     });
     
-    
 });
 
 $(window).load(function(){changeHeight();});
