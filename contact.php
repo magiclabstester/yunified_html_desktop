@@ -53,15 +53,15 @@ if(isset($_POST['submitted']))
 			<input type='hidden'  class='spmhidip' name='<?php echo $formproc->GetSpamTrapInputName(); ?>' />
 
                         <div class="col-wrap">
-                            <div class="col-50"><input type="text" name="user_name" id="user_name" value="<?php echo $formproc->SafeDisplay('user_name') ?>" required placeholder="Your name"/></div>
-                            <div class="col-50"><input type="email" name="user_email" class="h5-email" id="user_email" value="<?php echo $formproc->SafeDisplay('user_email') ?>" required placeholder="Your email address"/></div>
+                            <div class="col-50"><input type="text" name="user_name" maxlength="255" id="user_name" value="<?php echo $formproc->SafeDisplay('user_name') ?>" required placeholder="Your name"/></div>
+                            <div class="col-50"><input type="email" name="user_email" maxlength="50" class="h5-email" id="user_email" value="<?php echo $formproc->SafeDisplay('user_email') ?>" required placeholder="Your email address"/></div>
                         </div>
                         <div class="col-wrap">
-                            <div class="col-50"><input type="text" name="company_name" id="company_name" value="<?php echo $formproc->SafeDisplay('company_name') ?>" required placeholder="Your company"/></div>
-                            <div class="col-50"><input type="text" name="department" id="department" value="<?php echo $formproc->SafeDisplay('department') ?>" placeholder="Department"/></div>
+                            <div class="col-50"><input type="text" name="company_name" maxlength="255" id="company_name" value="<?php echo $formproc->SafeDisplay('company_name') ?>" required placeholder="Your company"/></div>
+                            <div class="col-50"><input type="text" name="department" maxlength="50" id="department" value="<?php echo $formproc->SafeDisplay('department') ?>" placeholder="Department"/></div>
                         </div>
                         <div class="col-wrap">
-                            <div class="col-100"><textarea name="message" id="message" value="SDFSDFSDF<?php echo $formproc->SafeDisplay('message') ?>" cols="30" rows="10" required placeholder="Your message*"></textarea></div>
+                            <div class="col-100"><textarea name="message" id="message" maxlength="255"  cols="30" rows="10" required placeholder="Your message*"><?php echo $formproc->SafeDisplay('message') ?></textarea></div>
                         </div>
                         <div class="col-wrap captcha-wrap">
                             <span class="captcha">What’s the total of <span><?php echo $formproc->getCaptcha();?> ?</span></span> <input class="captchaTxt"  name="captchaTxt" type="text" required/>
